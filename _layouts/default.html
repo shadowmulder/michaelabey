@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="row">
+      <div class="large-12 large-centered columns">
+
+        <header class="masthead">
+          <img src="{{ site.baseurl }}/public/profile.jpg" alt="Michael Abey">
+        </header>
+
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="large-6 large-offset-3 columns">
+
+      <div class="content-section">
+
+<p>
+Hello! I’m {{ site.author.name }}. I’m from Munich and I do stuff with other peoples computers known as the "cloud"
+</p>
+<p>
+    My daily work is done together with this <a target="_blank" href="https://maibornwolff.de">crazy bunch of people</a>.
+</p>
+          <p>
+              Plus I am supporting Sri Lankan people through the <a target="_blank" href="http://pinasrilanka.org/">PINA help organisation</a>, which did an amazing job in the last 30 years.
+          </p>
+
+      </div>
+
+<!-- Blogposts if needed
+
+  <main>
+    <h2>Latest Work</h2>
+    {% for post in site.posts %}
+      <div class="project-post">
+        <h3><a href="{{ post.git }}">{{ post.title }}</a></h3>
+        {{ post.content }}
+      </div>
+    {% endfor %}
+  </main>
+
+  -->
+
+      <footer>
+        <h2>How to get in Touch?!</h2>
+
+        <p>
+            Simply use the usual suspects ... I respond as fast as the Internet line allows me to do ...
+            I speak german, english, a bit italian and everything what google translate can speak currently
+        </p>
+
+        <p class="copyright">
+          <!-- &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. -->
+          This site as a Jekyll template and it's licensed MIT. <br /> You're welcome to <a target="_blank" href="{{ site.github.repo }}">use it</a>!
+        </p>
+      </footer>
+
+    </div>
+
+    <div class="large-2 large-offset-1 columns social">
+      <ul>
+        <li><a target="_blank" href="https://twitter.com/{{ site.twitter.account }}"><i class="fa fa-twitter"></i></a></li>
+        <li><a target="_blank" href="https://github.com/{{ site.github.account }}"><i class="fa fa-github"></i></a></li>
+        <li><a target="_blank" href="https://www.xing.com/profile/{{site.xing.account }}"><i class="fa fa-xing"></i></a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin.account }}"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+
+  </div>
+
+    {% if site.google_analytics %}
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+       ga('create', '{{ site.google_analytics }}', 'auto');
+       ga('send', 'pageview');
+     </script>
+    {% endif %}
+
+  </body>
+</html>

@@ -1,1 +1,40 @@
-theme: jekyll-theme-tactile
+# Permalinks
+permalink:           pretty
+
+# Setup
+name:                Michael Abey
+tagline:             IT-Architect from Munich.
+url:                 http://jamigibbs.com
+paginate:            1
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Michael Abey
+  url:               https://twitter.com/shadowmulder
+  email:             shadowmulder@gmx.net
+
+# Custom vars
+version:             2.0.1
+github:
+  account:           shadowmulder
+  url:               https://github.com/shadowmulder
+  repo:              https://github.com/shadowmulder/michaelabey
+twitter:
+  account:           shadowmulder
+xing:
+  account:           Michael_Abey
+linkedin:
+  account:           michael-abey-0b523565
+
+# Gems
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
